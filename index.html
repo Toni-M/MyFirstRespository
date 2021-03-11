@@ -2,27 +2,44 @@
 <html>
    
 <head>
+    <meta charset="utf-8"/>
     <link rel="stylesheet" href="style.css">
-    <title>Basic test page</title>
+    <!-- font implemenatation from google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <title>Tony`s Agency</title>
 </head>
 <body>
+
     <nav>
-    <a href="#">Home</a>
+    <a href="#entry">Home</a>
+    <a href="Forms.html">Projects</a>
     <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#contform">Contact</a>
 </nav>
     <div class="entry">
-    <p>Hello world</p>
+    <p class="textp">Hello world</p>
     <h5>...</h5>
-    <h1>This is my first website</h1>
+    <h1 class="text1">This is my first website</h1>
 </div>
-<!-- Form -->
+<!-- Contact Form -->
 <div class="contform">
     <h1 class="formi">Contact us!</h1>
 <form>    <input type="text" placeholder="Name" required></form>
     <form>  <input type="text" placeholder="Email" required></form>
         <form> <input type="text" placeholder="What would you like to contact me for?" required></form>
-            <form>   <button type="submit">Submit question</button></form>
+        <form><p>Who are you?</p></form>
+        <form>
+        <label for="company">
+            <input id="company" type="radio" name="indoor-outdoor"> Company 
+       
+         </label>
+           <label for="person">
+              <input id="person" type="radio" name="indoor-outdoor"> Person
+             
+               </label>
+            </form>
+            <form>   <button type="submit">Get in touch!</button></form>
         </div>
 </body>
 </html>
